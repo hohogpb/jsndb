@@ -1,6 +1,6 @@
 {
   "name": "jsndb",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "a simple json object db",
   "main": "index.js",
   "scripts": {
