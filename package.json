@@ -1,0 +1,30 @@
+{
+  "name": "jsndb",
+  "version": "1.0.0",
+  "description": "a simple json object db",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "json",
+    "db",
+    "database",
+    "storage",
+    "simple",
+    "embed",
+    "document",
+    "node",
+    "nodejs"
+  ],
+  "author": "bh",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hohogpb/jsndb.git"
+  },
+  "bugs": {
+    "url": "https://github.com/hohogpb/jsndb/issues"
+  },
+  "homepage": "https://github.com/hohogpb/jsndb#readme"
+}
