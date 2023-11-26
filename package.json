@@ -1,10 +1,10 @@
 {
   "name": "jsndb",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "a simple json object db",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
   "keywords": [
     "json",
@@ -26,5 +26,8 @@
   "bugs": {
     "url": "https://github.com/hohogpb/jsndb/issues"
   },
-  "homepage": "https://github.com/hohogpb/jsndb#readme"
+  "homepage": "https://github.com/hohogpb/jsndb#readme",
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
 }

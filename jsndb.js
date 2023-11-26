@@ -1,7 +1,19 @@
 const fs = require("fs");
+const path = require("path");
 
-function jsndb(dbPath) {
+function jsndb(dbPath, defaultValue = undefined) {
   let target = {};
+
+  if (defaultValue) {
+    if (typeof defaultValue != "object")
+      throw new Error("default value can only be object");
+
+    target = defaultValue;
+
+    if (!fs.existsSync(dbPath)) {
+      save();
+    }
+  }
 
   const builtinFn = {
     save,
@@ -32,6 +44,15 @@ function jsndb(dbPath) {
   function save() {
     fs.writeFileSync(dbPath, JSON.stringify(target, null, 2));
   }
+
+  function dirCheck() {
+    const directoryPath = path.dirname(dbPath);
+    if (!fs.existsSync(directoryPath)) {
+      fs.mkdirSync(directoryPath, { recursive: true });
+    }
+  }
+
+  dirCheck();
 
   load();
 
